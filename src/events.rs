@@ -7,7 +7,7 @@ use crate::notify::Severity;
 use crate::reporter::Batch;
 use crate::util::log;
 
-const ALERT_EVENT_REASONS: [&str; 7] = [
+const ALERT_EVENT_REASONS: [&str; 8] = [
     "OOMKilling",
     "SystemOOM",
     "Evicted",
@@ -15,6 +15,7 @@ const ALERT_EVENT_REASONS: [&str; 7] = [
     "NodeNotReady",
     "FailedMount",
     "FailedAttachVolume",
+    "Missing",
 ];
 
 /// Warning events need nothing remembered, each one is looked at on its own.
