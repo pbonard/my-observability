@@ -9,6 +9,6 @@ RUN cargo build --release --locked
 
 # not scratch: aws-lc, the TLS crypto library, is C code that needs glibc
 FROM gcr.io/distroless/cc-debian13
-COPY --from=stage1 /app/target/release/k8s-watcher /k8s-watcher
+COPY --from=stage1 /app/target/release/k8s-crash-detector /k8s-crash-detector
 USER 65534:65534
-ENTRYPOINT ["/k8s-watcher"]
+ENTRYPOINT ["/k8s-crash-detector"]

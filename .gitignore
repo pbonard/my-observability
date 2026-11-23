@@ -207,3 +207,4 @@ raw-secret*.yaml
 *.cnf
 # python
 __pycache__/
+*.cnf
