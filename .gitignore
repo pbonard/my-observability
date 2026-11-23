@@ -205,3 +205,6 @@ raw-secret*.yaml
 *.srl
 *.p12
 *.cnf
+# python
+__pycache__/
+*.cnf
